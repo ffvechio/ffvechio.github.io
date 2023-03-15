@@ -1,763 +1,1182 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>Felipe Bessa</title>
-		<meta name="description" content="Sobre Felipe Bessa" />
-		<meta name="keywords" content="felipe bessa, felipe, bessa, fbessa, automacao de teste, automação de teste, automatizador de teste, automatizador, engenheiro de teste, qa enginner, quality assurance," />
-		<meta name="author" content="Felipe Bessa"/>
-		
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		
-		<!--CSS-->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
-	
-	<body id="body" data-ng-app="contactApp">
-		
-		<!--Preloader-->
-		<div class="preloader-it">
-			<div class="mdl-spinner mdl-js-spinner is-active is-upgraded" data-upgraded=",MaterialSpinner"><div class="mdl-spinner__layer mdl-spinner__layer-1"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-2"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-3"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-4"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div></div>
-		</div>
-		<!--/Preloader-->
-		
-		<!--Main Wrapper-->
-		<div class="main-wrapper">
-		
-			<!--Bg Image-->
-			<div class="bg-struct bg-img"></div>
-			<!--/Bg Image-->
-			
-			<div class="mdl-js-layout mdl-layout--fixed-header">
-				
-				<!--Top Header-->
-				<header class="mdl-layout__header">
-					<div class="mdl-layout__header-row mdl-scroll-spy-1">
-						<!-- Title -->
-						<a href="index.html"><img class="img-responsive" src="img/logo.jpg"></a>
-						<div class="mdl-layout-spacer"></div>
-						<ul class="nav mdl-navigation mdl-layout--large-screen-only">
-							<li><a class="mdl-navigation__link" data-scroll href="#body">Sobre</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#skills_sec">Habilidades</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#experience_sec">Experiência</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#contact_sec">Contato</a></li>
-						</ul>
-						<!-- Right aligned menu below button -->
-						<button id="demo-menu-lower-right"
-								class="mdl-button mdl-js-button mdl-button--icon ver-more-btn">
-						  <i class="material-icons">more_vert</i>
-						</button>
+<!doctype html>
+<html class="no-js" lang="zxx">
 
-						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-							data-mdl-for="demo-menu-lower-right">
-							<li class="mdl-menu__item"><a href="#"><i class="zmdi zmdi-download font-red pr-10"></i>Download CV</a></li>
-							<li class="mdl-menu__item"><a href="mailto:ffvechio@gmail.com"><i class="zmdi zmdi-email-open font-green pr-10"></i>Contato</a></li>
-							<li class="mdl-menu__item"><a href="https://api.whatsapp.com/send?phone=5511962614291&text=Ol%C3%A1%2C%20Bessa!"><i class="zmdi zmdi-whatsapp  font-blue  pr-10"></i>(11) 96261-4291</a></li>
-						</ul>
-					</div>
-				</header>
-				<!--/Top Header-->
-				
-				<!--Left Sidebar-->
-				<div class="mdl-layout__drawer">
-					<div class="nicescroll-bar">
-						<div class="drawer-profile-wrap">
-							<div class="candidate-img-drawer mt-25 mb-20"></div>
-							<span class="candidate-name block mb-10 text-center">Felipe Bessa</span>
-							<ul class="social-icons  mb-30">
-								<li>
-									<a class="facebook-link" href="#">
-										<i id="tt11" class="zmdi zmdi-facebook"></i>
-										<div class="mdl-tooltip" data-mdl-for="tt11">
-											facebook
-										</div>
-									</a>
-								</li>
-								<li>
-									<a class="twitter-link" href="#">
-										<i id="tt12" class="zmdi zmdi-twitter"></i>
-										<div class="mdl-tooltip" data-mdl-for="tt12">
-											twitter
-										</div>
-									</a>
-								</li>
-								<li>
-									<a class="linkedin-link" href="https://www.linkedin.com/in/ffvechio">
-										<i id="tt13" class="zmdi zmdi-linkedin"></i>
-										<div class="mdl-tooltip" data-mdl-for="tt13">
-											linkedin
-										</div>
-									</a>
-								</li>
-								<li>
-									<a class="github-link" href="http://github.com/ffvechio">
-										<i id="tt14" class="zmdi zmdi-github"></i>
-										<div class="mdl-tooltip" data-mdl-for="tt14">
-											github
-										</div>
-									</a>
-								</li>
-								<li>
-									<a class="instagram-link" href="#">
-										<i id="tt15" class="zmdi zmdi-instagram"></i>
-										<div class="mdl-tooltip" data-mdl-for="tt15">
-											instagram
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="mdl-scroll-spy-2">
-							<ul class="mdl-navigation">
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
-										<i class="zmdi zmdi-border-color pr-15"></i>
-										<span class="font-capitalize">Sobre</span>
-									</a>
-								</li>	
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec">
-										<i class="zmdi zmdi-cutlery pr-15"></i>
-										<span class="font-capitalize">Habilidades</span>
-									</a>
-								</li>
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#portfolio_sec">
-										<i class="zmdi zmdi-case pr-15"></i>
-										<span class="font-capitalize">Projetos</span>
-									</a>
-								</li>	
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#experience_sec">
-										<i class="zmdi zmdi-shield-check pr-15"></i>
-										<span class="font-capitalize">Experiência</span>
-									</a>
-								</li>				
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#blog_sec">
-										<i class="zmdi zmdi-tag-more pr-15"></i>
-										<span class="font-capitalize">Blog</span>
-									</a>
-									
-								</li>								
-								<li>
-									<a class="mdl-navigation__link border-top-sep border-bottom-sep" 	data-scroll  href="#contact_sec">
-										<i class="zmdi zmdi-email pr-15"></i>
-										<span class="font-capitalize">Contato</span>
-									</a>
-								</li>	
-							</ul>
-						</div>
-						<div class="drawer-footer mt-50 mb-30 text-center">
-							<p class="font-12 mt-10">Felipe Bessa &copy; 2019.</p>
-						</div>
-					</div>
-				</div>
-				<!--/Left Sidebar-->
-				
-				<!--Main Content-->
-				<div class="main-content relative">
-					<div class="container">
-						
-						<!--About Sec-->
-						<section class="about-sec mt-180 mt-sm-120  mb-30">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="mdl-card mdl-shadow--2dp">
-										<div class="row">
-											<div class="col-md-5 col-xs-12 mb-30">
-												<div class="candidate-img mb-35"></div>
-												<ul class="social-icons">
-													<li>
-														<a class="facebook-link" href="#">
-															<i id="tt1" class="zmdi zmdi-facebook"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt1">
-																facebook
-															</div>
-														</a>
-													</li>
-													<li>
-														<a class="twitter-link" href="#">
-															<i id="tt2" class="zmdi zmdi-twitter"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt2">
-																twitter
-															</div>
-														</a>
-													</li>
-													<li>
-														<a class="linkedin-link" href="https://www.linkedin.com/in/ffvechio">
-															<i id="tt3" class="zmdi zmdi-linkedin"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt3">
-																linkedin
-															</div>
-														</a>
-													</li>
-													<li>
-														<a class="github-link" href="http://github.com/ffvechio">
-															<i id="tt4" class="zmdi zmdi-github"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt4">
-																github
-															</div>
-														</a>
-													</li>
-													<li>
-														<a class="instagram-link" href="#">
-															<i id="tt5" class="zmdi zmdi-instagram"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt5">
-																instagram
-															</div>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-md-7 col-xs-12">
-												<div class="info-wrap">
-													<h1>Felipe Bessa</h1>
-													<h5 class="mt-20 font-grey">QA Enginner | Itaú Unibanco</h5>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Epora - Online Courses & Education HTML Template - shared on themelock.com</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-												</div>
-												<ul class="profile-wrap mt-50">
-													<li>
-														<div class="profile-title">Idade</div>
-														<div class="profile-desc">27</div>
-													</li>
-													<li>
-														<div class="profile-title">Cidade</div>
-														<div class="profile-desc">São Paulo - SP</div>
-													</li>
-													<li>
-														<div class="profile-title">E-mail</div>
-														<div class="profile-desc">ffvechio@gmail.com</div>
-													</li>
-													<li>
-														<div class="profile-title">Whatsapp</div>
-														<div class="profile-desc">(11) 96261-4291</div>
-													</li>
-						
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>	
-							</div>
-						</section>
-						<!--/About Sec-->		
-						
-						<!--Skills Sec-->
-						<section id="skills_sec" class="skills-sec sec-pad-top-sm">
-							<div class="row">
-								<div class="col-sm-6 mb-30">
-									<h2 class="mb-30">Automação de teste</h2>
-									<div class="mdl-card mdl-shadow--2dp">
-										<div class="mb-15">
-											<span class="progress-cat">Java</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="80"></span>
-													</div>
-												</div>	
-											</div>
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Ruby</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="70"></span>
-													</div>
-												</div>	
-											</div>
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Cucumber</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="100"></span>
-													</div>
-												</div>	
-											</div>
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Selenium</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="90"></span>
-													</div>
-												</div>	
-											</div>
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Capybara</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="75"></span>
-													</div>
-												</div>	
-											</div>
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Appium (Android/iOS)</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="70"></span>
-													</div>
-												</div>	
-											</div>
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Rest-Assured</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="100"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">HTTParty</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="90"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">RSpec</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="90"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">JUnit</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="90"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6 mb-30">
-									<h2 class="mb-30">Ferramentas</h2>
-									<div class="mdl-card mdl-shadow--2dp">
-										
-										<div class="mb-15">
-											<span class="progress-cat">Jenkins</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="70"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Sonar</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="50"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Git</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="80"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Jira</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="90"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">IntelliJ</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="100"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Android Studio</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="50"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">VScode</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="100"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">MongoDB</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="70"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">Postman</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="90"></span>
-													</div>
-												</div>
-											</div>	
-										</div>
-										<div class="mb-15">
-											<span class="progress-cat">SoapUI</span>
-											<div class="progress-bar-graph"> 
-												<div class="progress-bar-wrap">
-													<div class="bar-wrap blue-bar">
-														<span data-width="80"></span>
-													</div>
-												</div>
-											</div>	
-										</div>	
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-									</div>
-								</div>
-							</div>
-						</section>
-						<!--/Skills Sec-->
-						
-						<!--Experience Sec-->
-						<section id="experience_sec" class="experience-sec sec-pad-top-sm">
-							<h2 class="mb-30">Experiência</h2>
-							<div class="timeline-wrap  overflow-hide mb-30">
-								<ul class="timeline">
-									<li class="timeline-inverted">
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-star-circle font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">QA Enginner</h4>
-												<span class="duration mb-5">Fev 2020 — Até o momento.</span>
-												<span class="institution">Itaú Unibanco</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"><!-- descripton --></p>
-											</div>
-										</div>
-									</li>
-									
-									<li>
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-star-circle font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">QA Enginner</h4>
-												<span class="duration mb-5">Jan 2019 - Fev 2020</span>
-												<span class="institution">CI&T</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"><!-- descripton --></p>
-											</div>
-										</div>
-									</li>
-									
-									<li class="timeline-inverted">
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-star-circle font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Automation Test Analyst</h4>
-												<span class="duration mb-5">Jul 2017 — Jan 2019</span>
-												<span class="institution">Yaman</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"><!-- descripton --></p>
-											</div>
-										</div>
-									</li>
-									
-									<li>
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-star-circle font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Automation Test</h4>
-												<span class="duration mb-5">Set 2019 – Jul 2017</span>
-												<span class="institution">Indra Company</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"><!-- descripton --></p>
-											</div>
-										</div>
-									</li>
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/meanmenu.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/backtotop.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <link rel="stylesheet" href="assets/css/ui-icon.css">
+   <link rel="stylesheet" href="assets/css/elegentfonts.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-									<li class="timeline-inverted">
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-star-circle font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Automation Test</h4>
-												<span class="duration mb-5">Abr 2016 — Set 2016</span>
-												<span class="institution">Resource IT Solution</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"><!-- descripton --></p>
-											</div>
-										</div>
-									</li>
+<body>
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
 
-									<li>
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-star-circle font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Test Analyst</h4>
-												<span class="duration mb-5">Jan 2015 – Abrl 2016</span>
-												<span class="institution">BRQ</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"><!-- descripton --></p>
-											</div>
-										</div>
-									</li>
 
-									<li class="timeline-inverted">
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-star-circle font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Test Analyst</h4>
-												<span class="duration mb-5">Set 2011 — Dez 2014</span>
-												<span class="institution">Solera, Inc.</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"><!-- descripton --></p>
-											</div>
-										</div>
-									</li>
+   <!-- pre loader area start -->
+   <div id="loading">
+      <div id="loading-center">
+         <div id="loading-center-absolute">
+            <!-- loading content here -->
+         </div>
+      </div>
+   </div>
+   <!-- pre loader area end -->
 
-									<li class="clearfix no-float"></li>
-								</ul>
-							</div>
-						</section>
-						<!--/Experience Sec-->
-						
-						<!--References Sec-->
-						<section id="references_sec" class="reference-sec sec-pad-top-sm">
-							<h2 class="mb-30">Recomendações</h2>
-							<div class="row">
-								<div class="col-sm-12 mb-30">
-									<div class="mdl-card mdl-shadow--2dp border-top-yellow pa-35">
-										<div class="testimonial-carousel">
-											<div>
-												<blockquote>"Felipe é um excelente profissional e colega de trabalho. Possui grande experiência com testes de software e automação de testes, sempre focado em entregar suas atividades dentro do prazo e qualidade. Possui facilidade em aprender, responsável, flexibilidade e facilidade para trabalhar em grupo."</blockquote>
-												<span class="ref-name block mb-5 mt-20">Erico Takano</span>
-												<span class="ref-desgn block">QA Enginner | CI&T</span>
-											</div>
-											<div>
-												<blockquote>"O Felipe é um ótimo profissional da área de tecnologia, principalmente quando se diz respeito a automação de testes. Trabalhei com ele em um projeto de automação onde ele fazia testes como de webservices e afins. Tem facilidade de aprendizado e disposto a sempre inovar ou trazer mudanças construtivas, o que faz com o que o time se espelhe e tenha idéias inovadoras também. Pessoas como o Felipe fazem um time de trabalho muito melhor e de maior qualidade."</blockquote>
-												<span class="ref-name block mb-5 mt-20">Gabriel Aguido Fraga</span>
-												<span class="ref-desgn block">QA Specialist | Cielo</span>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
-						
-						</section>
-						<!--/References Sec-->
-						
-						<!--Client Sec-->
-						<section id="client_sec" class="client-sec sec-pad-top-sm">
-							<div class="row">
-								<div class="col-sm-12 mb-30">
-									<div class="client-carousel">
-										<img src="img/client11.jpg" alt="client">
-										<img src="img/client2.jpg" alt="client">
-										<img src="img/client3.jpg" alt="client">
-										<img src="img/client4.jpg" alt="client">
-										<img src="img/client5.jpg" alt="client">
-										<img src="img/client6.jpg" alt="client">
-										<img src="img/client7.jpg" alt="client">
-										<img src="img/client8.jpg" alt="client">
-										<img src="img/client9.jpg" alt="client">
-										<img src="img/client10.jpg" alt="client">
-										<img src="img/client12.jpg" alt="client">
-										<img src="img/client1.jpg" alt="client">
+   <!-- back to top start -->
+   <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- back to top end -->
 
-									</div>
-								</div>
-							</div>
-						</section>
-						<!--/Client Sec-->
-					
-						
-						
-						<!--Contact Sec-->
-						<section id="contact_sec" class="contact-sec sec-pad-top-sm">
-							<h2 class="mb-35">Contato</h2>
-							<div class="row">
-								<div id="form_card_height" class="col-sm-7 mb-30">
-									<div  class="mdl-card mdl-shadow--2dp" data-ng-controller="ContactController">
-										<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class=" form-horizontal mb-30" role="form">
-											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-													<input autocomplete="off" data-ng-model="formData.inputName" class="mdl-textfield__input" type="text" id="inputName" name="inputName" required>
-													<label class="mdl-textfield__label" for="inputName">Nome*</label>
-												</div>	
-											</div>
-											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-													<input autocomplete="off" data-ng-model="formData.inputEmail" class="mdl-textfield__input" type="email" id="inputEmail" name="inputEmail" required>
-													<label class="mdl-textfield__label" for="inputEmail">E-mail*</label>
-												</div>
-											</div>
-											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-													<textarea 
-													data-ng-model="formData.inputMessage" 
-													class="mdl-textfield__input"  rows="3" id="inputMessage" name="inputMessage" required></textarea>
-													<label class="mdl-textfield__label" for="inputMessage">Mensagem*</label>
-												</div>	
-											</div>
-											<div class="form-group">
-												<div class="align-center">
-													<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-blue font-white" data-ng-disabled="submitButtonDisabled">
-														ENVIAR
-													</button>
-												</div>
-											</div>
-										</form>
-										<p class="block result" data-ng-class="result">{{ resultMessage }}</p>
-									</div>
-								</div>
-								<div class="col-sm-5 mb-30">
-									<div class="mdl-card mdl-shadow--2dp pa-0">
-										<div id="map_canvas"></div>
-									</div>
-								</div>
-							</div>
-						</section>
-						<!--/Contact Sec-->
-						
-						<!--Footer Sec-->
-						<footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
-							<p class="mt-10">Felipe Bessa 2019. Todos os direitos reservados.</p>
-								<ul class="social-icons mt-10">
-									<li>
-										<a class="facebook-link" href="#">
-											<i id="tt6" class="zmdi zmdi-facebook"></i>
-											<div class="mdl-tooltip" data-mdl-for="tt6">
-												facebook
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="twitter-link" href="#">
-											<i id="tt7" class="zmdi zmdi-twitter"></i>
-											<div class="mdl-tooltip" data-mdl-for="tt7">
-												twitter
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="linkedin-link" href="https://www.linkedin.com/in/ffvechio">
-											<i id="tt8" class="zmdi zmdi-linkedin"></i>
-											<div class="mdl-tooltip" data-mdl-for="tt8">
-												linkedin
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="github-link" href="http://github.com/ffvechio">
-											<i id="tt9" class="zmdi zmdi-github"></i>
-											<div class="mdl-tooltip" data-mdl-for="tt9">
-												github
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="instagram-link" href="#">
-											<i id="tt10" class="zmdi zmdi-instagram"></i>
-											<div class="mdl-tooltip" data-mdl-for="tt10">
-												instagram
-											</div>
-										</a>
-									</li>
-								</ul>
-											
-						</footer>
-						<!--Footer Sec-->
-					</div>
-				</div>	
-				<!--/Main Content-->
-							
-			</div>	
-		</div>	
-		<!--/Main Wrapper-->
-		
-		<!-- Scripts -->
-		<script src="js/jquery-1.12.4.min.js"></script>
-		<script src="js/angular.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
-		<script src="js/material.min.js"></script>
-		<script src="js/jQuery.appear.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/controllers.js"></script>
-		<script src="js/smooth-scroll.js"></script>
-		<script src="js/isotope.js"></script>
-		<script src="js/lightgallery-all.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/froogaloop2.min.js"></script>
-		<script src="js/jquery.slimscroll.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
-		<script src="js/init.js"></script>
-	</body>
+   <!-- header area start -->
+   <header class="header__transparent">
+      <div class="header__area pl-220 pr-220 pt-30">
+         <div class="main-header" id="header-sticky">
+            <div class="container-fluid">
+               <div class="row align-items-center">
+                  <div class="col-xxl-3 col-xl-3 col-lg-5 col-md-6 col-6">
+                     <div class="logo-area d-flex align-items-center">
+                        <div class="logo">
+                           <a href="index.html">
+                              <img src="assets/img/logo/logo.png" alt="logo">
+                           </a>
+                        </div>
+                        <div class="header-cat-menu ml-40 d-none d-md-block">
+                           <nav>
+                              <ul>
+                                 <li><a href="course-grid.html"> Categorie <span><i class="arrow_carrot-down"></i></span></a>
+                                    <ul class="sub-menu">
+                                       <li><a href="course-grid.html">Bangla Medium</a></li>
+                                       <li><a href="course-grid.html">English Medium</a></li>
+                                       <li><a href="course-grid.html">Video Edition</a></li>
+                                       <li><a href="course-grid.html">Logo Design</a></li>
+                                       <li><a href="course-grid.html">Francy Medium</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-9 col-xl-9 col-lg-7 col-md-6 col-6 d-flex align-items-center justify-content-end">
+                     <div class="main-menu d-flex justify-content-end mr-15">
+                        <nav id="mobile-menu">
+                           <ul>
+                              <li class="has-dropdown">
+                                 <a href="index.html">Home</a>
+                                 <ul class="submenu">
+                                    <li><a href="index.html">Home Style 1</a></li>
+                                    <li><a href="index-2.html">Home Style 2</a></li>
+                                    <li><a href="index-3.html">Home Style 3</a></li>
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="about.html">Pages</a>
+                                 <ul class="submenu">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="checkout.html">Check Out</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="sign-in.html">Sign In</a></li>
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="instructor.html">Instructor</a>
+                                 <ul class="submenu">
+                                    <li><a href="instructor.html">Instructor</a></li>
+                                    <li><a href="instructor-profile.html">Instructor Profile</a></li>
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="course-grid.html">Course</a>
+                                 <ul class="submenu">
+                                    <li><a href="course-grid.html">Course Grid</a></li>
+                                    <li><a href="course-list.html">Course List</a></li>
+                                    <li><a href="course-details.html">Course Details</a></li>
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="blog.html">Blog</a>
+                                 <ul class="submenu">
+                                    <li><a href="blog.html">Blog Sidebar</a></li>
+                                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                                    <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                     <div class="header-right d-md-flex align-items-center">
+                        <div class="header__search d-none d-lg-block">
+                           <form action="#">
+                              <div class="header__search-input">
+                                 <button class="header__search-btn">
+                                    <i class="fa-regular fa-magnifying-glass"></i>
+                                 </button>
+                                 <input type="text" placeholder="Search Courses">
+                              </div>
+                           </form>
+                        </div>
+                        <div class="header-meta">
+                           <ul>
+                              <li><a href="sign-in.html" class="d-none d-md-block"><i class="fi fi-rr-user"></i></a></li>
+                              <li><a href="cart.html" class="d-none d-md-block"><i class="	 fi fi-rr-shopping-bag"></i></a></li>
+                              <li><a href="#" class="tp-menu-toggle d-xl-none"><i class="icon_ul"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- header area end -->
+   <div class="tp-sidebar-menu">
+      <button class="sidebar-close"><i class="icon_close"></i></button>
+      <div class="side-logo mb-30">
+         <a href="index.html"><img src="assets/img/logo/logo-black.png" alt="logo"></a>
+      </div>
+      <div class="mobile-menu"></div>
+      <div class="sidebar-info">
+         <h4 class="mb-15">Contact Info</h4>
+         <ul class="side_circle">
+            <li>27 Division St, New York</li>
+            <li><a href="tel:123456789">+1 800 123 456 78</a></li>
+            <li><a href="mailto:epora@example.com">epora@example.com</a></li>
+         </ul>
+         <div class="side-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+
+   <main>
+
+      <!-- banner-area -->
+      <section class="banner-area fix p-relative">
+         <div class="banner-bg" data-background="assets/img/banner/banner-01.jpg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-8">
+                     <div class="hero-content">
+                        <span>Learn New Skills & Popular Courses</span>
+                        <h2 class="hero-title mb-35">For Every Student, Every <i>Classroom</i>.</h2>
+                        <p>Dramatically supply transparent deliverables before backward<br>comp internal or "organic"
+                           sources. Competently leverage other.</p>
+                        <div class="tp-banner-btn">
+                           <a href="course-list.html" class="tp-btn">Explore Courses</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                     <div class="banner-info d-none">
+                        <ul>
+                           <li><span>235K</span>Worldwide Students</li>
+                           <li><span>3.5K</span>Free Pro Courses</li>
+                           <li><span>4.7<i class="fi fi-rr-star "></i></span>Worldwide Review</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="banner-shape d-none d-lg-block">
+                     <img src="assets/img/banner/banner-shape-01.png" alt="banner-shape" class="b-shape">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- banner-area-end -->
+
+      <!-- feature-area -->
+      <section class="tp-feature-area grey-bg pt-115 pb-90 pl-205 pr-205 bg-bottom" data-background="assets/img/bg/shape-bg-1.png">
+         <div class="container-fluid">
+            <div class="row text-center">
+               <div class="col-lg-12">
+                  <div class="section-title mb-60">
+                     <span class="tp-sub-title mb-20">What We Offer</span>
+                     <h2 class="tp-section-title">For Your Future Learning.</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="tp-feature-cn">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-6 col-md-6">
+                     <div class="tpfea mb-30">
+                        <div class="tpfea__icon mb-25">
+                           <i class="fi fi-rr-paper-plane"></i>
+                        </div>
+                        <div class="tpfea__text">
+                           <h5 class="tpfea__title mb-20">Online Courses</h5>
+                           <p>Interactively provide access world class materials for unique catalysts for change my ocardinat.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6">
+                     <div class="tpfea mb-30">
+                        <div class="tpfea__icon mb-25">
+                           <i class="fi fi-rr-user"></i>
+                        </div>
+                        <div class="tpfea__text">
+                           <h5 class="tpfea__title mb-20">Expert Trainer</h5>
+                           <p>Interactively provide access world class materials for unique catalysts for change my ocardinat.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6">
+                     <div class="tpfea mb-30">
+                        <div class="tpfea__icon mb-25">
+                           <i class="fi fi-rr-document"></i>
+                        </div>
+                        <div class="tpfea__text">
+                           <h5 class="tpfea__title mb-20">Get Certificate</h5>
+                           <p>Interactively provide access world class materials for unique catalysts for change my ocardinat.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6">
+                     <div class="tpfea mb-30">
+                        <div class="tpfea__icon mb-25">
+                           <i class="fi fi-rr-calendar"></i>
+                        </div>
+                        <div class="tpfea__text">
+                           <h5 class="tpfea__title mb-20">Life Time Access</h5>
+                           <p>Interactively provide access world class materials for unique catalysts for change my ocardinat.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- feature-area-end -->
+
+      <!-- about-area -->
+      <section class="tp-about-area pt-120 pb-90">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6">
+                  <div class="tp-about-img p-relative pb-30 ml-10">
+                     <img src="assets/img/about/about-img.png" alt="about-img">
+                     <div class="tp-about-line-shape d-none d-md-block">
+                        <img src="assets/img/about/about-shape-03.png" alt="about-shape" class="tp-aline-one">
+                        <img src="assets/img/about/about-shape-04.png" alt="about-shape" class="tp-aline-two">
+                        <img src="assets/img/about/about-shape-05.png" alt="about-shape" class="tp-aline-three">
+                     </div>
+                     <div class="tp-about-shape  d-none d-xl-block">
+                        <img src="assets/img/about/about-shape-01.png" alt="about-shape" class="a-shape-one">
+                        <img src="assets/img/about/about-shape-02.png" alt="about-shape" class="a-shape-two">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6">
+                  <div class="tp-about-content pb-30 ml-80">
+                     <div class="section-title mb-55">
+                        <span class="tp-sub-title mb-20">About Our Courses</span>
+                        <h2 class="tp-section-title mb-15">Explore Thousands of Creative Classes.</h2>
+                        <p>Dramatically supply transparent deliverables beforese backward comp internal or "organic" sources. Comp transparent leverage other.</p>
+                     </div>
+                     <div class="about-btn">
+                        <a href="about.html" class="tp-btn">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- about-area-end -->
+
+      <!-- catrgory-area -->
+      <section class="tp-category-area bg-bottom grey-bg pt-110 pb-80" data-background="assets/img/bg/shape-bg-1.png">
+         <div class="container">
+            <div class="row text-center">
+               <div class="col-lg-12">
+                  <div class="section-title mb-65">
+                     <h2 class="tp-section-title">Top Categories</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-01.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">Design Deve</a></h4>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-02.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">Development</a></h4>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-03.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">Marketing</a></h4>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-04.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">It & Software</a></h4>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-05.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">Videography</a></h4>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-06.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">Business Sys</a></h4>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-07.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">Photography</a></h4>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="tp-cat-item mb-40 d-flex align-items-center">
+                     <div class="tp-category-icon mr-15">
+                        <img src="assets/img/category/category-08.png" alt="category-img">
+                     </div>
+                     <h4 class="tp-category-title"><a href="course-grid.html">Musical Intru</a></h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- catrgory-area-end -->
+
+      <!-- course-area -->
+      <section class="course-area pt-115 pb-110">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-title mb-65">
+                     <h2 class="tp-section-title mb-20">Explore Popular Courses</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="tpcourse mb-40">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html"><img src="assets/img/course/course-thumb-01.jpg" alt="course-thumb"></a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content">
+                        <div class="tpcourse__avatar d-flex align-items-center mb-20">
+                           <img src="assets/img/icon/course-avata-01.png" alt="course-avata">
+                           <h4 class="tpcourse__title"><a href="course-details.html">The Complete 2022 Web Development Camp</a></h4>
+                        </div>
+                        <div class="tpcourse__meta pb-15 mb-20">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__category d-flex align-items-center justify-content-between">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a href="course-details.html">Design</a></li>
+                              <li><a href="course-details.html">Development</a></li>
+                           </ul>
+                           <h5 class="tpcourse__course-price">$29.99</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="tpcourse mb-40">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html"><img src="assets/img/course/course-thumb-02.jpg" alt="course-thumb"></a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content">
+                        <div class="tpcourse__avatar d-flex align-items-center mb-20">
+                           <img src="assets/img/icon/course-avata-02.png" alt="course-avata">
+                           <h4 class="tpcourse__title"><a href="course-details.html">Complete Web Design from Figma to Webflow</a></h4>
+                        </div>
+                        <div class="tpcourse__meta pb-15 mb-20">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__category d-flex align-items-center justify-content-between">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a href="course-details.html">Design</a></li>
+                              <li><a href="course-details.html">Development</a></li>
+                           </ul>
+                           <h5 class="tpcourse__course-price">$29.99</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="tpcourse mb-40">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html"><img src="assets/img/course/course-thumb-03.jpg" alt="course-thumb"></a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content">
+                        <div class="tpcourse__avatar d-flex align-items-center mb-20">
+                           <img src="assets/img/icon/course-avata-03.png" alt="course-avata">
+                           <h4 class="tpcourse__title"><a href="course-details.html">SEO: Structured Data Markup for Web Masters</a></h4>
+                        </div>
+                        <div class="tpcourse__meta pb-15 mb-20">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__category d-flex align-items-center justify-content-between">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a href="course-details.html">Design</a></li>
+                              <li><a href="course-details.html">Development</a></li>
+                           </ul>
+                           <h5 class="tpcourse__course-price">$29.99</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="tpcourse mb-40">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html"><img src="assets/img/course/course-thumb-04.jpg" alt="course-thumb"></a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content">
+                        <div class="tpcourse__avatar d-flex align-items-center mb-20">
+                           <img src="assets/img/icon/course-avata-04.png" alt="course-avata">
+                           <h4 class="tpcourse__title"><a href="course-details.html">Complete Web Design from Figma Freelancing</a></h4>
+                        </div>
+                        <div class="tpcourse__meta pb-15 mb-20">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__category d-flex align-items-center justify-content-between">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a href="course-details.html">Design</a></li>
+                              <li><a href="course-details.html">Development</a></li>
+                           </ul>
+                           <h5 class="tpcourse__course-price">$29.99</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="tpcourse mb-40">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html"><img src="assets/img/course/course-thumb-05.jpg" alt="course-thumb"></a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content">
+                        <div class="tpcourse__avatar d-flex align-items-center mb-20">
+                           <img src="assets/img/icon/course-avata-05.png" alt="course-avata">
+                           <h4 class="tpcourse__title"><a href="course-details.html">Dreamweaver - Coding your first website using</a></h4>
+                        </div>
+                        <div class="tpcourse__meta pb-15 mb-20">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__category d-flex align-items-center justify-content-between">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a href="course-details.html">Design</a></li>
+                              <li><a href="course-details.html">Development</a></li>
+                           </ul>
+                           <h5 class="tpcourse__course-price">$29.99</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="tpcourse mb-40">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html"><img src="assets/img/course/course-thumb-06.jpg" alt="course-thumb"></a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content">
+                        <div class="tpcourse__avatar d-flex align-items-center mb-20">
+                           <img src="assets/img/icon/course-avata-06.png" alt="course-avata">
+                           <h4 class="tpcourse__title"><a href="course-details.html">How to Write Great Web Content - Better Search!</a></h4>
+                        </div>
+                        <div class="tpcourse__meta pb-15 mb-20">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__category d-flex align-items-center justify-content-between">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a href="course-details.html">Design</a></li>
+                              <li><a href="course-details.html">Development</a></li>
+                           </ul>
+                           <h5 class="tpcourse__course-price">$29.99</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+               <div class="col-lg-12">
+                  <div class="course-btn mt-20"><a class="tp-btn" href="course-details.html">Browse All Courses</a></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- course-area-end -->
+
+      <!-- choose-area -->
+      <section class="choose-area pb-90">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-xl-7 col-lg-6 col-md-6">
+                  <div class="tp-choose-img p-relative mb-30 ml-25">
+                     <img src="assets/img/bg/choose-img-01.jpg" alt="choose-img">
+                     <div class="tpchoose-img-text d-none d-md-block">
+                        <ul>
+                           <li>
+                              <i>23+</i>
+                              <p>Years Experiences</p>
+                           </li>
+                           <li>
+                              <i class="fa-light fa-check"></i>
+                              <p>Fully Safe & Secure</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-5 col-lg-6 col-md-6">
+                  <div class="tp-choose-content mb-30">
+                     <div class="section-title mb-25">
+                        <span class="tp-sub-title mb-25">Why Choose Us</span>
+                        <h2 class="tp-section-title mb-20">Why You Choose Our<br>E-Pora Online learning</h2>
+                        <p>Dramatically supply transparent deliverables before & can backward comp internal or "organic" sources.</p>
+                     </div>
+                     <div class="tp-choose-list mb-35">
+                        <ul>
+                           <li><i class="fa-light fa-check"></i>Increasing Your Learning Skills</li>
+                           <li><i class="fa-light fa-check"></i>High Quality Video & Audio Classes</li>
+                           <li><i class="fa-light fa-check"></i>Finish Your Course, Get Certificate</li>
+                        </ul>
+                     </div>
+                     <div class="choose-btn">
+                        <a href="about.html" class="tp-btn">Explore Courses</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- choose-area-end -->
+
+      <!-- counter-area -->
+      <section class="tp-counter-area bg-bottom grey-bg pt-120 pb-60" data-background="assets/img/bg/shape-bg-1.png">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-md-6">
+                  <div class="counter-item mb-60 text-center">
+                     <div class="counter-item__icon mb-25">
+                        <i class="fi fi-rr-user"></i>
+                     </div>
+                     <div class="counter-item__content">
+                        <h4 class="counter-item__title"><span class="counter">276</span>K</h4>
+                        <p>Worldwide Students</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-md-6">
+                  <div class="counter-item mb-60 text-center">
+                     <div class="counter-item__icon mb-25">
+                        <i class="fi fi-rr-document"></i>
+                     </div>
+                     <div class="counter-item__content">
+                        <h4 class="counter-item__title"><span class="counter">23</span>+</h4>
+                        <p>Years Experience</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-md-6">
+                  <div class="counter-item mb-60 text-center">
+                     <div class="counter-item__icon mb-25">
+                        <i class="fi fi-rr-apps"></i>
+                     </div>
+                     <div class="counter-item__content">
+                        <h4 class="counter-item__title"><span class="counter">735</span>+</h4>
+                        <p>Professional Courses</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-md-6">
+                  <div class="counter-item mb-60 text-center">
+                     <div class="counter-item__icon mb-25">
+                        <i class="fi fi-rr-star"></i>
+                     </div>
+                     <div class="counter-item__content">
+                        <h4 class="counter-item__title"><span class="counter">4.7</span>K+</h4>
+                        <p>Beautiful Review</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- counter-area-end -->
+
+      <!-- instructor-area -->
+      <section class="instructor-area pt-110 pb-110">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 col-lg-8 col-md-7 col-12">
+                  <div class="section-title mb-65">
+                     <h2 class="tp-section-title mb-20">Our Expert Instructor</h2>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-4 col-md-5 col-6">
+                  <div class="tp-instruc-arrow d-flex justify-content-md-end"></div>
+               </div>
+            </div>
+            <div class="intruc-active mb-15 tp-slide-space">
+               <div class="tp-instruc-item">
+                  <div class="tp-instructor text-center p-relative mb-30">
+                     <div class="tp-instructor__thumb mb-25">
+                        <img src="assets/img/bg/instructor-bg-01.jpg" alt="instructor-profile">
+                     </div>
+                     <div class="tp-instructor__content">
+                        <h4 class="tp-instructor__title mb-20"><a href="instructor-profile.html">Devon Lane</a></h4>
+                        <span>Instructor</span>
+                        <div class="tp-instructor__social">
+                           <ul>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-facebook-f"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-twitter"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-youtube"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tp-instruc-item">
+                  <div class="tp-instructor text-center p-relative mb-30">
+                     <div class="tp-instructor__thumb mb-20">
+                        <img src="assets/img/bg/instructor-bg-02.jpg" alt="instructor-profile">
+                     </div>
+                     <div class="tp-instructor__content">
+                        <h4 class="tp-instructor__title  mb-20"><a href="instructor-profile.html">Jane Cooper</a></h4>
+                        <span>Instructor</span>
+                        <div class="tp-instructor__social">
+                           <ul>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-facebook-f"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-twitter"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-youtube"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tp-instruc-item">
+                  <div class="tp-instructor text-center p-relative mb-30">
+                     <div class="tp-instructor__thumb mb-20">
+                        <img src="assets/img/bg/instructor-bg-03.jpg" alt="instructor-profile">
+                     </div>
+                     <div class="tp-instructor__content">
+                        <h4 class="tp-instructor__title mb-20"><a href="instructor-profile.html">Courtney Henry</a></h4>
+                        <span>Instructor</span>
+                        <div class="tp-instructor__social">
+                           <ul>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-facebook-f"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-twitter"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-youtube"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tp-instruc-item">
+                  <div class="tp-instructor text-center p-relative mb-30">
+                     <div class="tp-instructor__thumb mb-20">
+                        <img src="assets/img/bg/instructor-bg-04.jpg" alt="instructor-profile">
+                     </div>
+                     <div class="tp-instructor__content">
+                        <h4 class="tp-instructor__title mb-20"><a href="instructor-profile.html">Devon Lane</a></h4>
+                        <span>Instructor</span>
+                        <div class="tp-instructor__social">
+                           <ul>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-facebook-f"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-twitter"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="instructor-profile.html"><i class="fa-brands fa-youtube"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="instructor-btn text-center">
+                     <a class="tp-btn" href="instructor.html">All Instructor</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- instructor-area-enfd -->
+      
+      <!-- suitable-area -->
+      <section class="suitable-area pb-90">
+         <div class="container">
+            <div class="row text-center">
+               <div class="col-lg-12">
+                  <div class="section-title mb-60">
+                     <span class="tp-sub-title mb-25">Join With Us</span>
+                     <h2 class="tp-section-title">Which One is Suitable For You?</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-6">
+                  <div class="tp-suit mb-30 p-relative">
+                     <div class="tp-suit__content">
+                        <h4 class="tp-suit__title">Do you want to <span>Learn</span> here?</h4>
+                        <p>Dramatically supply transpa deliverables before & you.</p>
+                        <div class="tp-suit__btn pt-5">
+                           <a href="contact.html" class="tp-border-btn">Join Now</a>
+                        </div>
+                     </div>
+                     <div class="tp-suit__img">
+                        <img src="assets/img/bg/suit-bg-01.png" alt="suitable-img">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6">
+                  <div class="tp-suit mb-30 p-relative">
+                     <div class="tp-suit__content">
+                        <h4 class="tp-suit__title">Do you want to <span>Teach</span> here?</h4>
+                        <p>Dramatically supply transpa deliverables before & you.</p>
+                        <div class="tp-suit__btn pt-5">
+                           <a href="contact.html" class="tp-border-btn">Join Now</a>
+                        </div>
+                     </div>
+                     <div class="tp-suit__tech">
+                        <img src="assets/img/bg/suit-bg-02.png" alt="suitable-img">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- suitable-area-end -->
+
+      <!-- testimonial-area -->
+      <section class="testimonial-area bg-bottom pt-110 pb-90 " data-background="assets/img/bg/shape-bg-1.png">
+         <div class="container">
+            <div class="row justify-content-between">
+               <div class="col-xl-6 col-lg-8 col-md-8 col-12">
+                  <div class="section-title mb-65">
+                     <h2 class="tp-section-title mb-20">Our Expert Instructor</h2>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-4 col-md-4 col-6">
+                  <div class="tp-section-arrow d-flex justify-content-md-end mb-40"></div>
+               </div>
+            </div>
+            <div class="testimonial-active tp-slide-space">
+               <div class="tp-test-slide-item">
+                  <div class="tp-testi p-relative mt-65">
+                     <div class="tp-testi__avatar">
+                        <img src="assets/img/icon/test-ava-01.png" alt="testi-avatar">
+                     </div>
+                     <div class="tp-testi__rating pb-5">
+                        <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-rs-star"></i></li>
+                        </ul>
+                     </div>
+                     <div class="tp-testi__avainfo">
+                        <p>Dramatically supply transparent deliverab before & you backward comp internal or "organic" sources.</p>
+                        <h3 class="tp-testi__title">Courtney Henry</h3>
+                        <i>Sr. UX/UI Designer</i>
+                     </div>
+                  </div>
+               </div>
+               <div class="tp-test-slide-item">
+                  <div class="tp-testi p-relative mt-65">
+                     <div class="tp-testi__avatar">
+                        <img src="assets/img/icon/test-ava-02.png" alt="testi-avatar">
+                     </div>
+                     <div class="tp-testi__rating pb-5">
+                        <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-rs-star"></i></li>
+                        </ul>
+                     </div>
+                     <div class="tp-testi__avainfo">
+                        <p>Dramatically supply transparent deliverab before & you backward comp internal or "organic" sources.</p>
+                        <h3 class="tp-testi__title">Devon Lane</h3>
+                        <i>Software Engineer</i>
+                     </div>
+                  </div>
+               </div>
+               <div class="tp-test-slide-item">
+                  <div class="tp-testi p-relative mt-65">
+                     <div class="tp-testi__avatar">
+                        <img src="assets/img/icon/test-ava-03.png" alt="testi-avatar">
+                     </div>
+                     <div class="tp-testi__rating pb-5">
+                        <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-rs-star"></i></li>
+                        </ul>
+                     </div>
+                     <div class="tp-testi__avainfo">
+                        <p>Dramatically supply transparent deliverab before & you backward comp internal or "organic" sources.</p>
+                        <h3 class="tp-testi__title">Jenny Wilson</h3>
+                        <i>Content Writter</i>
+                     </div>
+                  </div>
+               </div>
+               <div class="tp-test-slide-item">
+                  <div class="tp-testi p-relative mt-65">
+                     <div class="tp-testi__avatar">
+                        <img src="assets/img/icon/test-ava-03.png" alt="testi-avatar">
+                     </div>
+                     <div class="tp-testi__rating pb-5">
+                        <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-ss-star"></i></li>
+                           <li><i class="fi fi-rs-star"></i></li>
+                        </ul>
+                     </div>
+                     <div class="tp-testi__avainfo">
+                        <p>Dramatically supply transparent deliverables before & can backward comp internal or "organic" sources.</p>
+                        <h3 class="tp-testi__title">Jenny Wilson</h3>
+                        <i>Content Writter</i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- testimonial-area-end -->
+
+      <!-- blog-area -->
+      <section class="blog-area pt-110 pb-110">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="section-title mb-65 text-center">
+                     <h2 class="tp-section-title mb-20">Latest Blogs & News</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-4 col-md-6">
+                  <div class="tp-blog mb-60">
+                     <div class="tp-blog__thumb p-relative">
+                        <div class="tp-blog__timg fix">
+                           <a href="blog-details.html"><img src="assets/img/bg/blog-img-01.jpg" alt="blog-img"></a>
+                        </div>
+                        <div class="tp-blog__icon"><a href="blog-details.html"><i class="fi fi-rs-angle-right"></i></a></div>
+                     </div>
+                     <div class="tp-blog__content">
+                        <div class="tp-blog__meta mb-10">
+                           <a href="blog-details.html">Education</a> <span>-</span> 
+                           <a href="blog-details.html">Jan 21 , 2022</a>
+                        </div>
+                        <h3 class="tp-blog__title mb-15"><a href="blog-details.html">Educational Technology & Mobile Learning</a></h3>
+                        <p>Dramatically supply transparent deliverab before & you backward comp internal.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-md-6">
+                  <div class="tp-blog mb-60">
+                     <div class="tp-blog__thumb p-relative">
+                        <div class="tp-blog__timg fix">
+                           <a href="blog-details.html"><img src="assets/img/bg/blog-img-02.jpg" alt="blog-img"></a>
+                        </div>
+                        <div class="tp-blog__icon"><a href="#"><i class="fi fi-rs-angle-right"></i></a></div>
+                     </div>
+                     <div class="tp-blog__content">
+                        <div class="tp-blog__meta mb-10">
+                           <a href="blog-details.html">Education</a> <span>-</span> 
+                           <a href="blog-details.html">Jan 21 , 2022</a>
+                        </div>
+                        <h3 class="tp-blog__title mb-15"><a href="blog-details.html">Computer Technology &  Fild Work Experiences</a></h3>
+                        <p>Dramatically supply transparent deliverab before & you backward comp internal.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-md-6">
+                  <div class="tp-blog mb-60">
+                     <div class="tp-blog__thumb p-relative">
+                        <div class="tp-blog__timg fix">
+                           <a href="blog-details.html"><img src="assets/img/bg/blog-img-03.jpg" alt="blog-img"></a>
+                        </div>
+                        <div class="tp-blog__icon"><a href="#"><i class="fi fi-rs-angle-right"></i></a></div>
+                     </div>
+                     <div class="tp-blog__content">
+                        <div class="tp-blog__meta mb-10">
+                           <a href="blog-details.html">Education</a> <span>-</span> 
+                           <a href="blog-details.html">Jan 21 , 2022</a>
+                        </div>
+                        <h3 class="tp-blog__title mb-15"><a href="blog-details.html">Engineering Technology & Academic Learning</a></h3>
+                        <p>Dramatically supply transparent deliverab before & you backward comp internal.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="blog-btn text-center">
+                     <a href="blog.html" class="tp-btn">All Blog</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- blog-area-end -->
+
+      <!-- brand-area -->
+      <section class="brand-area pb-110">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="section-title mb-65 text-center">
+                     <h2 class="tp-section-title mb-20">Our Key Supporters</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-12">
+                  <div class="brand-area tp-brand-active">
+                     <div class="brand-item">
+                        <a href="#"><img src="assets/img/icon/brand-icon-01.png" alt="brand-logo"></a>
+                     </div>
+                     <div class="brand-item">
+                        <a href="#"><img src="assets/img/icon/brand-icon-02.png" alt="brand-logo"></a>
+                     </div>
+                     <div class="brand-item">
+                        <a href="#"><img src="assets/img/icon/brand-icon-03.png" alt="brand-logo"></a>
+                     </div>
+                     <div class="brand-item">
+                        <a href="#"><img src="assets/img/icon/brand-icon-04.png" alt="brand-logo"></a>
+                     </div>
+                     <div class="brand-item">
+                        <a href="#"><img src="assets/img/icon/brand-icon-05.png" alt="brand-logo"></a>
+                     </div>
+                     <div class="brand-item">
+                        <a href="#"><img src="assets/img/icon/brand-icon-01.png" alt="brand-logo"></a>
+                     </div>
+                     <div class="brand-item">
+                        <a href="#"><img src="assets/img/icon/brand-icon-02.png" alt="brand-logo"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- brand-area-end -->
+
+   </main>
+
+      <!-- footer-area -->
+      <footer>
+         <div class="footer-bg theme-bg bg-bottom" data-background="assets/img/bg/shape-bg-02.png">
+            <div class="f-border pt-115 pb-70">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-2 col-md-4">
+                        <div class="footer-widget footer-col-1 mb-50">
+                           <div class="footer-widget__text mb-35">
+                              <h3 class="footer-widget__title">About</h3>
+                           </div>
+                           <div class="footer-widget__link">
+                              <ul>
+                                 <li><a href="about.html">About us</a></li>
+                                 <li><a href="blog.html">Blog</a></li>
+                                 <li><a href="#">Careers</a></li>
+                                 <li><a href="#">Jobs</a></li>
+                                 <li><a href="#">In Press</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-md-4">
+                        <div class="footer-widget footer-col-2 mb-50">
+                           <div class="footer-widget__text mb-35">
+                              <h3 class="footer-widget__title">Quick Links</h3>
+                           </div>
+                           <div class="footer-widget__link">
+                              <ul>
+                                 <li><a href="#">Refund Policy</a></li>
+                                 <li><a href="#">Documentation</a></li>
+                                 <li><a href="#">Chat online</a></li>
+                                 <li><a href="#">Order Cancel</a></li>
+                                 <li><a href="#">Privacy Policy</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-md-4">
+                        <div class="footer-widget footer-col-3 mb-50">
+                           <div class="footer-widget__text mb-35">
+                              <h3 class="footer-widget__title">Support</h3>
+                           </div>
+                           <div class="footer-widget__link">
+                              <ul>
+                                 <li><a href="contact.html">Contact us</a></li>
+                                 <li><a href="#">Online Chat</a></li>
+                                 <li><a href="#">Whatsapp</a></li>
+                                 <li><a href="#">Telegram</a></li>
+                                 <li><a href="#">Ticketing</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-6 col-md-8">
+                        <div class="footer-widget footer-col-4  mb-50">
+                           <div class="footer-widget__text mb-35">
+                              <h3 class="footer-widget__title">Support</h3>
+                           </div>
+                           <p>Be the first one to know  about discounts, offers and events. Unsubscribe whenever you like.</p>
+                           <div class="footer-widget__f-newsletter mb-40">
+                              <form action="index.html">
+                                 <span><i class="icon_mail_alt"></i></span>
+                                 <input type="email" placeholder="Enter your email">
+                                 <button class="footer-widget__submit tp-border-btn2">Subscribe Now</button>
+                              </form>
+                           </div>
+                           <div class="footer-widget__social d-flex align-items-center">
+                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                 <a href="#"><i class="fa-light fa-basketball"></i></a>
+                                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="f-copyright pt-60 pb-30">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-5">
+                        <div class="f-copyright__logo mb-30">
+                           <a href="index.html"><img src="assets/img/logo/Logo.png" alt="logo"></a>
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="f-copyright__text text-md-end mb-30">
+                           <span>Copyright©Uxaction 2022, All Rights Reserved</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer-area-end -->
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/vendor/waypoints.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+   <script src="assets/js/meanmenu.js"></script>
+   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/parallax.js"></script>
+   <script src="assets/js/backtotop.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/counterup.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
+
 </html>
