@@ -41,14 +41,14 @@
   --tp-common-white: #ffffff;
   --tp-common-black: #000;
   --tp-heading-primary: #050D36;
-  --tp-heading-secondary: #FF6652;
+  --tp-heading-secondary: #00FF43;
   --tp-heading-b-light: #050D36;
   --tp-grey-1: #F8FAFA;
   --tp-grey-2: #F5F6F8;
   --tp-text-body: #000;
   --tp-text-1: #000;
   --tp-text-2: #777C90;
-  --tp-theme-1: #FF6652;
+  --tp-theme-1: #00FF43;
   --tp-theme-2: #F7F8F9;
   --tp-border-1: #fff;
   --tp-border-2: #245D51;
@@ -2354,7 +2354,7 @@ ul.bili_circle li::before {
 .slider-info-list ul li:nth-child(2) {
   bottom: 115px;
   right: 735px;
-  background-color: #FF6652;
+  background-color: #00FF43; 
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .slider-info-list ul li:nth-child(2) {
